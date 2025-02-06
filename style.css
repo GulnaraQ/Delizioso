@@ -37,7 +37,7 @@
   z-index: 1;
   font-family: Poppins-Regular;
 }
-.links a {
+.navbar .links a {
   display: inline-block;
   font-size: 14px;
   color: black;
@@ -46,7 +46,7 @@
   border-radius: 133px;
   transition: 0.5s ease;
 }
-.links a:hover {
+.navbar .links a:hover {
   color: white;
   background-color: rgba(63, 167, 47, 1);
 }
@@ -170,3 +170,86 @@
   font-family: Poppins-Regular;
 }
 /* section1 end */
+
+.section2 {
+  font-family: Poppins-Regular;
+  padding: 70px 0;
+  text-align: center;
+}
+.section2 .links {
+  border: 1px solid red;
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  justify-content: space-between;
+}
+.section2 .links a:first-child {
+  background-color: rgba(49, 31, 9, 1);
+  color: white;
+  font-weight: 600;
+  width: 200px;
+}
+.section2 .links a {
+  display: inline-block;
+  background-color: rgba(208, 204, 199, 0.1);
+  color: black;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 7px 10px;
+  border-radius: 163px;
+}
+.eat-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-content: space-between;
+  gap: 25px;
+}
+.eat-boxes .box {
+  background-color: rgba(87, 103, 118, 0.04);
+  border-radius: 70px;
+  padding: 30px 20px;
+  transition: 0.5s ease;
+}
+.eat-boxes .box:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.eat-boxes .box img:first-child {
+  width: 100%;
+}
+.eat-name {
+  font-size: 30px;
+  line-height: 60px;
+}
+.eat-description {
+  color: rgba(89, 68, 43, 1);
+  font-size: 14px;
+  line-height: 28px;
+}
+.price {
+  width: 70%;
+  margin: 15px auto;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  align-items: center;
+}
+.price a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(255, 138, 0, 1);
+  border-radius: 163px;
+  padding: 10px 20px;
+}
+.price p {
+  font-size: 25px;
+  line-height: 38px;
+  font-weight: 600;
+}
+.arrow {
+  margin: 50px 0;
+}
+/* section2 end */
