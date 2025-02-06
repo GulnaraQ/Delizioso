@@ -13,6 +13,10 @@
   font-family: Raleway-Regular;
   src: url(./fonts/Raleway/Raleway-Regular.ttf);
 }
+@font-face {
+  font-family: Tinos-Regular;
+  src: url(./fonts/Tinos/Tinos-Regular.ttf);
+}
 .container {
   width: 1100px;
   margin: auto;
@@ -98,7 +102,7 @@
   line-height: 40px;
   margin-bottom: 70px;
 }
-.header-info .btn {
+.btn {
   display: inline-block;
   font-size: 20px;
   font-weight: 600;
@@ -134,3 +138,35 @@
   width: 100%;
 }
 /* header end */
+
+.section1 {
+  background-color: rgba(63, 198, 110, 0.1);
+}
+
+.section1 .container {
+  padding: 70px 0;
+  display: grid;
+  grid-template-columns: 54% 45%;
+  justify-content: space-between;
+  align-items: center;
+}
+.section1-image img {
+  width: 100%;
+}
+.section-title {
+  font-size: 80px;
+  line-height: 88px;
+  font-weight: 700;
+  font-family: Tinos-Regular;
+}
+.section-title span {
+  color: rgba(255, 138, 0, 1);
+}
+.section-description {
+  font-size: 20px;
+  line-height: 40px;
+  margin: 30px 0 70px;
+  color: rgba(92, 69, 41, 1);
+  font-family: Poppins-Regular;
+}
+/* section1 end */
