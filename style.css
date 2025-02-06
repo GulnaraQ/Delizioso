@@ -158,6 +158,7 @@
   line-height: 88px;
   font-weight: 700;
   font-family: Tinos-Regular;
+  color: rgba(49, 31, 9, 1);
 }
 .section-title span {
   color: rgba(255, 138, 0, 1);
@@ -312,14 +313,49 @@
   width: 100%;
   transition: 0.5s ease;
 }
-.chef-name,
-.chef-position {
+.chef-name {
   font-size: 25px;
   line-height: 50px;
   font-weight: 600;
   margin: 20px 0;
+  color: rgba(49, 31, 9, 1);
 }
 .chef-position {
+  font-size: 25px;
+  line-height: 50px;
+  margin: 20px 0;
   color: rgba(160, 141, 118, 1);
 }
 /* section4 end */
+
+.section5 {
+  background: rgba(208, 204, 199, 0.1) url(./images/rounds.png) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding: 70px 0;
+}
+.section5 .container {
+  padding: 50px 0;
+}
+.user-comment {
+  font-family: Poppins-Regular;
+  width: 50%;
+  margin: 50px auto;
+  padding: 30px 0;
+}
+.user-name {
+  font-size: 30px;
+  line-height: 60px;
+  font-weight: 600;
+  color: rgba(49, 31, 9, 1);
+}
+
+.user-position,
+.user-description {
+  font-size: 20px;
+  line-height: 40px;
+  color: rgba(92, 69, 41, 1);
+}
+.user-position {
+  margin-bottom: 15px;
+}
