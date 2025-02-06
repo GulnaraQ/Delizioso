@@ -177,7 +177,6 @@
   text-align: center;
 }
 .section2 .links {
-  border: 1px solid red;
   margin: 50px 0;
   display: grid;
   grid-template-columns: repeat(5, 150px);
@@ -253,3 +252,35 @@
   margin: 50px 0;
 }
 /* section2 end */
+
+.section3 {
+  padding: 70px 0;
+
+  background-color: rgba(255, 244, 231, 0.4);
+}
+.reservation {
+  background: url(./images/reservimg2.png) no-repeat;
+  background-size: contain;
+}
+.reservation .container {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 54% 45%;
+  justify-content: space-between;
+}
+.section3-image {
+  position: relative;
+}
+.section3-image img {
+  position: absolute;
+  width: 140px;
+}
+.img1 {
+  top: -50px;
+  right: 170px;
+}
+.img2 {
+  left: -75px;
+  bottom: -85px;
+}
+/* section3 end */
