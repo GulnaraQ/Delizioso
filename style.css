@@ -284,3 +284,42 @@
   bottom: -85px;
 }
 /* section3 end */
+
+.section4 {
+  padding: 70px 0;
+  text-align: center;
+}
+.chef-boxes {
+  font-family: Poppins-Regular;
+  margin: 70px 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+}
+.chef {
+  border-radius: 56px;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.chef:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  > img {
+    transform: scale(1.1);
+  }
+}
+
+.chef img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+.chef-name,
+.chef-position {
+  font-size: 25px;
+  line-height: 50px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+.chef-position {
+  color: rgba(160, 141, 118, 1);
+}
+/* section4 end */
