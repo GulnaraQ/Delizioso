@@ -7,159 +7,192 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="header container">
+    <header class="header">
       <div class="navbar">
-        <div class="logo">
-          <a href="./index.html"
-            ><img src="./images/logoDelizioso.png" alt="logo"
-          /></a>
-        </div>
-        <div class="links">
-          <a href="./index.html" class="activ">Home</a>
-          <a href="">Menu</a>
-          <a href="">About us</a>
-          <a href="">Order online</a>
-          <a href="">Reservation</a>
-          <a href="">Contact us</a>
-        </div>
-        <div class="login">
-          <div><img src="./images/cart.png" alt="cart" /></div>
-          <div><a href="login">Log in</a></div>
+        <div class="container">
+          <div class="logoAndlinks">
+            <div class="logo">
+              <a href="./index.html"
+                ><img src="./images/logoDelizioso.png" alt="logo"
+              /></a>
+            </div>
+            <nav class="links" id="nav">
+              <a href="./index.html" class="activ">Home</a>
+              <a href="">Menu</a>
+              <a href="">About us</a>
+              <a href="">Order online</a>
+              <a href="">Reservation</a>
+              <a href="">Contact us</a>
+            </nav>
+            <div class="login">
+              <div><img src="./images/cart.png" alt="cart" /></div>
+              <div><a href="login">Log in</a></div>
+            </div>
+            <div class="bars" id="bars">
+              <img
+                src="./icons/bars-svgrepo-com.svg"
+                alt="bars"
+                id="barsImage"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <!-- navbar end -->
 
-      <div class="header-boxes">
-        <div class="header-info">
-          <h4 class="header-little-title">Restauran</h4>
-          <h1 class="header-title">Italian Cuisine</h1>
-          <p class="header-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales
-            senectus dictum arcu sit tristique donec eget.
-          </p>
-          <a href="#" class="orange-btn btn">Order now</a>
-          <a href="#" class="green-btn btn">Reservation</a>
+      <div class="container">
+        <div class="header-boxes">
+          <div class="header-info">
+            <h4 class="header-little-title">Restauran</h4>
+            <h1 class="header-title">Italian Cuisine</h1>
+            <p class="header-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales
+              senectus dictum arcu sit tristique donec eget.
+            </p>
+            <div class="buttons">
+              <a href="#" class="orange-btn btn">Order now</a>
+              <a href="#" class="green-btn btn">Reservation</a>
+            </div>
+          </div>
+          <div class="header-image">
+            <img src="./images/headerImage.png" alt="header image" />
+          </div>
         </div>
-        <div class="header-image">
-          <img src="./images/headerImage.png" alt="header image" />
-        </div>
+        <!-- header boxes end -->
       </div>
-      <!-- header boxes end -->
     </header>
     <!-- header end -->
+
+    <script>
+      bars.onclick = function () {
+        if (barsImage.src.includes("bars-svgrepo-com.svg")) {
+          barsImage.src = "./icons/times-svgrepo-com.svg";
+        } else {
+          barsImage.src = "./icons/bars-svgrepo-com.svg";
+        }
+        nav.classList.toggle("showMobileMenu");
+      };
+    </script>
 
     <main>
       <section class="section1">
         <div class="container">
-          <div class="section1-image">
-            <img src="./images/section1Image.png" alt="eat image" />
-          </div>
-          <div class="section1-info">
-            <h2 class="section-title">Welcome to <span>delizioso</span></h2>
-            <p class="section-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
-              ultricies at eleifend proin. Congue nibh nulla malesuada ultricies
-              nec quam
-            </p>
-            <a href="#" class="btn orange-btn">See our menu</a>
+          <div class="welcome-deliziso">
+            <div class="section1-image">
+              <img src="./images/section1Image.png" alt="eat image" />
+            </div>
+            <div class="section1-info">
+              <h2 class="section-title">Welcome to <span>delizioso</span></h2>
+              <p class="section-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis ultricies at eleifend proin. Congue nibh nulla
+                malesuada ultricies nec quam
+              </p>
+              <a href="#" class="btn orange-btn">See our menu</a>
+            </div>
           </div>
         </div>
       </section>
       <!-- section1 end -->
 
-      <section class="section2 container">
-        <h2 class="section-title">Our popular menu</h2>
-        <div class="links">
-          <a href="#">All catagory</a>
-          <a href="#">Dinner</a>
-          <a href="#">Lunch</a>
-          <a href="#">Dessert</a>
-          <a href="#">Drink</a>
-        </div>
-        <!-- links end -->
-        <div class="eat-boxes">
-          <div class="box">
-            <img src="./images/Spaghetti.png" alt="Spaghetti" />
-            <h3 class="eat-name">Spaghetti</h3>
-            <img src="./images/Rating.png" alt="Rating" />
-            <p class="eat-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
-              consequat mi eget auctor aliquam, diam.
-            </p>
-            <div class="price">
-              <p>$12.05</p>
-              <a href="#">Order now</a>
+      <div class="container">
+        <section class="section2">
+          <h2 class="section-title">Our popular menu</h2>
+          <div class="links">
+            <a href="#">All catagory</a>
+            <a href="#">Dinner</a>
+            <a href="#">Lunch</a>
+            <a href="#">Dessert</a>
+            <a href="#">Drink</a>
+          </div>
+          <!-- links end -->
+          <div class="eat-boxes">
+            <div class="box">
+              <img src="./images/Spaghetti.png" alt="Spaghetti" />
+              <h3 class="eat-name">Spaghetti</h3>
+              <img src="./images/Rating.png" alt="Rating" />
+              <p class="eat-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
+                consequat mi eget auctor aliquam, diam.
+              </p>
+              <div class="price">
+                <p>$12.05</p>
+                <a href="#">Order now</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="./images/Gnocchi.png" alt="Gnocchi" />
+              <h3 class="eat-name">Gnocchi</h3>
+              <img src="./images/Rating.png" alt="Rating" />
+              <p class="eat-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
+                consequat mi eget auctor aliquam, diam.
+              </p>
+              <div class="price">
+                <p>$12.05</p>
+                <a href="#">Order now</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="./images/Rovioli.png" alt="Rovioli" />
+              <h3 class="eat-name">Rovioli</h3>
+              <img src="./images/Rating.png" alt="Rating" />
+              <p class="eat-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
+                consequat mi eget auctor aliquam, diam.
+              </p>
+              <div class="price">
+                <p>$12.05</p>
+                <a href="#">Order now</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="./images/PenneAllaVodak.png" alt="Penne Alla Vodak" />
+              <h3 class="eat-name">Penne Alla Vodak</h3>
+              <img src="./images/Rating.png" alt="Rating" />
+              <p class="eat-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
+                consequat mi eget auctor aliquam, diam.
+              </p>
+              <div class="price">
+                <p>$12.05</p>
+                <a href="#">Order now</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="./images/Risoto.png" alt="Risoto" />
+              <h3 class="eat-name">Risoto</h3>
+              <img src="./images/Rating.png" alt="Rating" />
+              <p class="eat-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
+                consequat mi eget auctor aliquam, diam.
+              </p>
+              <div class="price">
+                <p>$12.05</p>
+                <a href="#">Order now</a>
+              </div>
+            </div>
+            <div class="box">
+              <img
+                src="./images/SplitzaSignature.png"
+                alt="Splitza Signature"
+              />
+              <h3 class="eat-name">Splitza Signature</h3>
+              <img src="./images/Rating.png" alt="Rating" />
+              <p class="eat-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
+                consequat mi eget auctor aliquam, diam.
+              </p>
+              <div class="price">
+                <p>$12.05</p>
+                <a href="#">Order now</a>
+              </div>
             </div>
           </div>
-          <div class="box">
-            <img src="./images/Gnocchi.png" alt="Gnocchi" />
-            <h3 class="eat-name">Gnocchi</h3>
-            <img src="./images/Rating.png" alt="Rating" />
-            <p class="eat-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
-              consequat mi eget auctor aliquam, diam.
-            </p>
-            <div class="price">
-              <p>$12.05</p>
-              <a href="#">Order now</a>
-            </div>
-          </div>
-          <div class="box">
-            <img src="./images/Rovioli.png" alt="Rovioli" />
-            <h3 class="eat-name">Rovioli</h3>
-            <img src="./images/Rating.png" alt="Rating" />
-            <p class="eat-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
-              consequat mi eget auctor aliquam, diam.
-            </p>
-            <div class="price">
-              <p>$12.05</p>
-              <a href="#">Order now</a>
-            </div>
-          </div>
-          <div class="box">
-            <img src="./images/PenneAllaVodak.png" alt="Penne Alla Vodak" />
-            <h3 class="eat-name">Penne Alla Vodak</h3>
-            <img src="./images/Rating.png" alt="Rating" />
-            <p class="eat-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
-              consequat mi eget auctor aliquam, diam.
-            </p>
-            <div class="price">
-              <p>$12.05</p>
-              <a href="#">Order now</a>
-            </div>
-          </div>
-          <div class="box">
-            <img src="./images/Risoto.png" alt="Risoto" />
-            <h3 class="eat-name">Risoto</h3>
-            <img src="./images/Rating.png" alt="Rating" />
-            <p class="eat-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
-              consequat mi eget auctor aliquam, diam.
-            </p>
-            <div class="price">
-              <p>$12.05</p>
-              <a href="#">Order now</a>
-            </div>
-          </div>
-          <div class="box">
-            <img src="./images/SplitzaSignature.png" alt="Splitza Signature" />
-            <h3 class="eat-name">Splitza Signature</h3>
-            <img src="./images/Rating.png" alt="Rating" />
-            <p class="eat-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
-              consequat mi eget auctor aliquam, diam.
-            </p>
-            <div class="price">
-              <p>$12.05</p>
-              <a href="#">Order now</a>
-            </div>
-          </div>
-        </div>
-        <!-- eat boxes end -->
-        <img src="./images/arrow.png" alt="arrow" class="arrow" />
-      </section>
+          <!-- eat boxes end -->
+          <img src="./images/arrow.png" alt="arrow" class="arrow" />
+        </section>
+      </div>
       <!-- section2 end -->
 
       <section class="section3">
